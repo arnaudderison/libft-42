@@ -6,7 +6,16 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 22:41:28 by arnaud            #+#    #+#             */
-/*   Updated: 2023/08/30 09:19:27 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/08/30 09:37:06 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef LIBFT_H
+# define LIBFT_H
+
+#include <unistd.h>
+#include <stdlib.h>
+
+int	ft_strlen(const char *s);
+
+#endif
