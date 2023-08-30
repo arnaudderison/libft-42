@@ -6,7 +6,7 @@
 #    By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 22:41:49 by arnaud            #+#    #+#              #
-#    Updated: 2023/08/30 09:18:38 by arnaud           ###   ########.fr        #
+#    Updated: 2023/08/30 09:38:38 by arnaud           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRC_FILE = ft_strlen.c
 
 NAME = libft.a
 SRC = $(addprefix src/, $(SRC_FILE))
-OBJS = $(SRCS:.c=.o)
+OBJS = $(SRC:.c=.o)
 
 %.o: %.c
 	$(CC) $(FLAGS) -I./$(INCLUDE) -c $< -o $@
