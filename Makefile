@@ -6,7 +6,7 @@
 #    By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 22:41:49 by arnaud            #+#    #+#              #
-#    Updated: 2023/08/31 08:44:02 by arnaud           ###   ########.fr        #
+#    Updated: 2023/08/31 09:12:54 by arnaud           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ RM = rm -f
 SRC_FILE =	ft_bzero.c \
 			ft_memccpy.c \
 			ft_memcpy \
+			ft_memmove \
 		 	ft_strlen.c \
 			ft_strdup.c \
 			ft_memset.c
