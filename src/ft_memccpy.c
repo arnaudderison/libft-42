@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/30 09:42:18 by arnaud            #+#    #+#             */
-/*   Updated: 2023/08/30 19:53:16 by arnaud           ###   ########.fr       */
+/*   Created: 2023/08/31 08:36:50 by arnaud            #+#    #+#             */
+/*   Updated: 2023/08/31 08:54:32 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *str)
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-	int		str_len;
-	char	*dup;
-	int		i;
+	unsigned char *dest_ptr;
+	unsigned char *src_ptr;
+	unsigned char c_char;
+	size_t i;
 
+	dest_ptr = (unsigned char *)dest;
+	src_ptr = (unsigned char *)src;
+	c_char = (unsigned char)c;
 	i = -1;
-	str_len = ft_strlen(str);
-	dup = (char *)malloc(sizeof(char) * (str_len + 1));
-	if (!dup)
-		return (NULL);
-	dup[str_len] = '\0';
-	while (++i < str_len)
-		dup[i] = str[i];
-	return (dup);
+	while (++i < n)
+	{
+		dest_ptr[i] = src_ptr[i];
+		if (c_char == src_ptr[i])
+			return (dest + i + 1);
+	}
+	return (NULL);
 }
