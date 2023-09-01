@@ -6,7 +6,7 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 08:36:50 by arnaud            #+#    #+#             */
-/*   Updated: 2023/08/31 08:54:32 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/09/01 09:48:21 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
 	unsigned char *dest_ptr;
-	unsigned char *src_ptr;
+	const unsigned char *src_ptr;
 	unsigned char c_char;
 	size_t i;
 

@@ -6,6 +6,12 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/01 09:36:30 by arnaud            #+#    #+#             */
-/*   Updated: 2023/09/01 09:36:31 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/09/01 09:48:04 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
+void	*ft_memchr(const void *s, const void *s2, size_t n)
+{
+}

@@ -6,13 +6,13 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 09:42:18 by arnaud            #+#    #+#             */
-/*   Updated: 2023/08/30 19:53:16 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/09/01 09:49:27 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *str)
+char	*ft_strdup(const char *str)
 {
 	int		str_len;
 	char	*dup;
