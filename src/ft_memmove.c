@@ -6,7 +6,7 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 09:06:40 by arnaud            #+#    #+#             */
-/*   Updated: 2023/08/31 09:12:22 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/09/01 09:55:01 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	int i;
+	int	i;
 
 	if (dest > src)
 	{
