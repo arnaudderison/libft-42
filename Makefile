@@ -6,7 +6,7 @@
 #    By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 22:41:49 by arnaud            #+#    #+#              #
-#    Updated: 2023/09/01 09:57:02 by arnaud           ###   ########.fr        #
+#    Updated: 2023/09/05 20:09:00 by arnaud           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,9 +21,11 @@ SRC_FILE =	ft_bzero.c \
 			ft_memcmp.c \
 			ft_memcpy.c \
 			ft_memmove.c \
-			ft_memset.c
+			ft_memset.c \
+			ft_strcpy.c \
 			ft_strdup.c \
 		 	ft_strlen.c \
+			ft_strncpy.c
 
 NAME = libft.a
 SRC = $(addprefix src/, $(SRC_FILE))
