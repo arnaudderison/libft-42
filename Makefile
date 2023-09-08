@@ -6,7 +6,7 @@
 #    By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 22:41:49 by arnaud            #+#    #+#              #
-#    Updated: 2023/09/05 20:09:00 by arnaud           ###   ########.fr        #
+#    Updated: 2023/09/08 08:48:38 by arnaud           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,9 +22,12 @@ SRC_FILE =	ft_bzero.c \
 			ft_memcpy.c \
 			ft_memmove.c \
 			ft_memset.c \
+			ft_strcat.c \
 			ft_strcpy.c \
 			ft_strdup.c \
+			ft_strlcat.c \
 		 	ft_strlen.c \
+			ft_strncat.c \
 			ft_strncpy.c
 
 NAME = libft.a
