@@ -6,7 +6,7 @@
 #    By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 22:41:49 by arnaud            #+#    #+#              #
-#    Updated: 2023/09/08 08:48:38 by arnaud           ###   ########.fr        #
+#    Updated: 2023/09/15 09:16:44 by arnaud           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,8 @@ CC = gcc
 FLAGS = -Wall -Wextra -Werror
 LIB = ar rcs
 RM = rm -f
-SRC_FILE =	ft_bzero.c \
+SRC_FILE =	ft_atoi.c \
+			ft_bzero.c \
 			ft_memccpy.c \
 			ft_memchr.c \
 			ft_memcmp.c \
@@ -23,12 +24,18 @@ SRC_FILE =	ft_bzero.c \
 			ft_memmove.c \
 			ft_memset.c \
 			ft_strcat.c \
+			ft_strchr.c \
+			ft_strcmp.c \
 			ft_strcpy.c \
 			ft_strdup.c \
 			ft_strlcat.c \
 		 	ft_strlen.c \
 			ft_strncat.c \
-			ft_strncpy.c
+			ft_strncmp.c \
+			ft_strncpy.c \
+			ft_strnstr.c \
+			ft_strrchr.c \
+			ft_strstr.c
 
 NAME = libft.a
 SRC = $(addprefix src/, $(SRC_FILE))
