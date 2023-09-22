@@ -6,7 +6,7 @@
 #    By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 22:41:49 by arnaud            #+#    #+#              #
-#    Updated: 2023/09/15 09:16:44 by arnaud           ###   ########.fr        #
+#    Updated: 2023/09/22 09:57:17 by arnaud           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,9 @@ SRC_FILE =	ft_atoi.c \
 			ft_strncpy.c \
 			ft_strnstr.c \
 			ft_strrchr.c \
+			ft_isalpha.c \
+			ft_isdigit.c \
+			ft_isalnum.c \
 			ft_strstr.c
 
 NAME = libft.a
