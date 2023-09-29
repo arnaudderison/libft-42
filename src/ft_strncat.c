@@ -6,7 +6,7 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 08:41:50 by arnaud            #+#    #+#             */
-/*   Updated: 2023/09/08 08:43:21 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/09/29 08:48:37 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 char	*ft_strncat(char *destination, const char *source, size_t n)
 {
-	char *result = destination;
+	char	*result;
 
+	result = destination;
 	while (*destination)
 		destination++;
 	while (*source && (int)n > 0)

@@ -1,31 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_isascii.C                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/08 08:55:13 by arnaud            #+#    #+#             */
-/*   Updated: 2023/09/29 08:48:50 by arnaud           ###   ########.fr       */
+/*   Created: 2023/09/29 08:45:39 by arnaud            #+#    #+#             */
+/*   Updated: 2023/09/29 08:47:51 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strstr(const char *str, const char *to_find)
+int	isascii(int c)
 {
-	int	i;
-
-	if (*to_find == '\0')
-		return (str);
-	while (*str)
-	{
-		i = 0;
-		while (to_find[i])
-		{
-			if (*str++ == to_find[i++])
-				return (str);
-		}
-	}
-	return (NULL);
+	return (c >= 0 && c <= 127);
 }
