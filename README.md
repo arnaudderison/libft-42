@@ -32,6 +32,7 @@ Dans un premier temps il y a toutes les fonction de la libraire standard de C
 - [x] ft_strcmp
 - [x] ft_strncmp
 - [x] ft_atoi 
+
     Cette fonction retourne la valeur numérique d'un nombre passé en paramètre.
 
     ````c
