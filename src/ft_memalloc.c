@@ -6,7 +6,7 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 09:38:37 by arnaud            #+#    #+#             */
-/*   Updated: 2023/10/06 09:46:54 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/10/10 22:48:49 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	*ft_memalloc(size_t size)
 {
-	*ptr;
+	char *ptr;
 
 	ptr = (void *)malloc(sizeof(void) * size);
 	if (!ptr)
 		return (NULL);
-	ft_memset(prt, 0, size);
+	ft_memset(ptr, 0, size);
 	return (ptr);
 }

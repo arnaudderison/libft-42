@@ -6,7 +6,7 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 10:23:20 by arnaud            #+#    #+#             */
-/*   Updated: 2023/10/06 10:41:22 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/10/10 23:06:26 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	i = 0;
 	while (*s)
 	{
-		str[i] = f(s);
+		str[i] = f(*s);
 		i++;
 		s++;
 	}

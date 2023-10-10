@@ -6,7 +6,7 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 10:12:47 by arnaud            #+#    #+#             */
-/*   Updated: 2023/10/06 10:41:19 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/10/10 23:02:01 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_striter(char *s, void (*f)(char *))
 {
 	if (!s || !f)
-		return (NULL);
+		return ;
 	while (*s)
 		f(s++);
 }
