@@ -11,31 +11,40 @@ N'hésitez pas à parcourir le code, à le tester et à me faire part de vos com
 
 Dans un premier temps il y a toutes les fonction de la libraire standard de C
 
-[x] memset
-bzero
-memcpy
-memccpy
-memmove
-memchr
-memcmp
-strlen
-strdup
-strcpy
-strncpy
-strcat
-strncat
-strlcat
-strchr
-strrchr
-strstr
-strnstr
-strcmp
-strncmp
-atoi
-isalpha
-isdigit
-isalnum
-isascii
-isprint
-toupper
-tolower
+- [x] ft_memset
+- [x] ft_bzero
+- [x] ft_memcpy
+- [x] ft_memccpy
+- [x] ft_memmove
+- [x] ft_memchr
+- [x] ft_memcmp
+- [x] ft_strlen
+- [x] ft_strdup
+- [x] ft_strcpy
+- [x] ft_strncpy
+- [x] ft_strcat
+- [x] ft_strncat
+- [x] ft_strlcat
+- [x] ft_strchr
+- [x] ft_strrchr
+- [x] ft_strstr
+- [x] ft_strnstr
+- [x] ft_strcmp
+- [x] ft_strncmp
+- [x] ft_atoi
+Cette fonction retourne la valeur numérique d'un nombre passé en paramètre.
+
+````
+int	ft_atoi(const char *str)
+````
+
+````
+int number = ft_atoi("-42"); // number -> -42
+````
+- [x] ft_isalpha
+- [x] ft_isdigit
+- [x] ft_isalnum
+- [x] ft_isascii
+- [x] ft_isprint
+- [x] ft_toupper
+- [x] ft_tolower
