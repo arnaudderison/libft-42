@@ -6,11 +6,11 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 08:57:32 by arnaud            #+#    #+#             */
-/*   Updated: 2023/09/29 08:59:02 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/10/10 23:50:08 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (c - 'a' + 'A');

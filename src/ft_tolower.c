@@ -6,11 +6,11 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 08:58:06 by arnaud            #+#    #+#             */
-/*   Updated: 2023/09/29 08:58:54 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/10/10 23:50:03 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c - 'A' + 'a');
