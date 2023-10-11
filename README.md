@@ -9,13 +9,71 @@ N'hésitez pas à parcourir le code, à le tester et à me faire part de vos com
 
 # Docs
 
-Dans un premier temps il y a toutes les fonction de la libraire standard de C
+Au départ, il y a toutes les fonctions de la librairie standard de C :
 
 - [x] ft_memset
+
+    Cette fonction remplit la mémoire avec une constante de byte. Elle retourne un pointeur sur la mémoire de `s`.
+
+    ```c
+    void	*ft_memset(void *s, int c, size_t n);
+    ```
+
 - [x] ft_bzero
+    
+    Cette fonction efface les données de n octets de la mémoire commençant à l'emplacement de `s` en écrivant des zéros (`'\0'`) dans cette zone.
+
+    ```c
+    void	ft_bzero(void *s, size_t n);
+    ``` 
+
 - [x] ft_memcpy
+
+    Cette fonction copie les éléments de la zone mémoire source vers la destination. Elle retourne un pointeur vers la zone mémoire de la destination.
+
+    ```c
+    void	*ft_memcpy(void *dest, const void *src, size_t n);
+    ```
+
 - [x] ft_memccpy
+
+    Cette fonction copie les n premiers caractères de src vers dest. Elle s'arrête quand elle trouve c. Elle retourne le caractère après c ou `NULL` si c n'a pas été trouvé dans les n premiers caractères.
+
+    ```c
+    void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
+    ```
+
 - [x] ft_memmove
+
+    Cette fonction copie la zone mémoire de src vers dest sur les n premiers octets en tenant compte des éventuels chevauchements.
+
+    ```c
+    void	*ft_memmove(void *dest, const void *src, size_t n);
+    ```
+
+    ###### Exemple: 
+    ```c
+    memory : | A | B | C | D | E | F | G | H | I | J |
+    indices:   0   1   2   3   4   5   6   7   8   9
+    ```
+    Sans chevauchement:
+    ```c
+    ft_memmove(&memory[7], &memory[1], 3)
+
+    //return value (dest) 
+    //-> memory : | A | B | C | D | E | F | G | B | C | D |
+         indices:   0   1   2   3   4   5   6   7   8   9    
+    ```
+    Avec chevauchement:
+    ```c
+    ft_memmove(&memory[2], &memory[1], 3)
+
+    //return value (dest) 
+    //-> memory : | A | B | B | C | D | F | G | B | C | D |
+         indices:   0   1   2   3   4   5   6   7   8   9    
+    ```
+
+
 - [x] ft_memchr
 - [x] ft_memcmp
 - [x] ft_strlen
@@ -35,13 +93,13 @@ Dans un premier temps il y a toutes les fonction de la libraire standard de C
 
     Cette fonction retourne la valeur numérique d'un nombre passé en paramètre.
 
-    ````c
-    int	ft_atoi(const char *str)
-    ````
+    ```c
+    int	ft_atoi(const char *str);
+    ```
 
-    ````c
+    ```c
     int number = ft_atoi("-42"); // number -> -42
-    ````
+    ```
 - [x] ft_isalpha
 - [x] ft_isdigit
 - [x] ft_isalnum
