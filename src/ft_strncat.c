@@ -6,26 +6,26 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 08:41:50 by arnaud            #+#    #+#             */
-/*   Updated: 2023/09/29 08:48:37 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/10/18 10:22:26 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *destination, const char *source, size_t n)
+char	*ft_strncat(char *dest, const char *src, size_t n)
 {
 	char	*result;
 
-	result = destination;
-	while (*destination)
-		destination++;
-	while (*source && (int)n > 0)
+	result = dest;
+	while (*dest)
+		dest++;
+	while (*src && (int)n > 0)
 	{
-		*destination = *source;
-		destination++;
-		source++;
+		*dest = *src;
+		dest++;
+		src++;
 		n--;
 	}
-	*destination = '\0';
+	*dest = '\0';
 	return (result);
 }

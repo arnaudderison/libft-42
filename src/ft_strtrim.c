@@ -1,33 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 13:13:30 by arnaud            #+#    #+#             */
-/*   Updated: 2023/10/18 13:45:30 by arnaud           ###   ########.fr       */
+/*   Created: 2023/10/18 16:00:02 by arnaud            #+#    #+#             */
+/*   Updated: 2023/10/18 16:49:08 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *to_find, size_t len)
+int	is_space(char c)
 {
-	size_t	to_find_len;
-	size_t	i;
+	if (c == ' ' || c == '\n' || c == '\t')
+		return (1);
+	return (0);
+}
 
-	i = 0;
-	to_find_len = ft_strlen(to_find);
-	if (to_find_len == 0)
-		return ((char *)str);
-	if (len < to_find_len)
+char	*ft_strtrim(const char *s)
+{
+	size_t	s_len;
+	char	*result;
+
+	if (!s)
 		return (NULL);
-	while (str[i] && i <= len - to_find_len)
-	{
-		if (ft_strncmp(str + i, to_find, to_find_len) == 0)
-			return ((char *)(str + i));
-		i++;
-	}
-	return (NULL);
+	while (is_space(*s))
+		s++;
+	s_len = ft_strlen(s);
+	while (s_len > 0 && is_space(s[s_len - 1]))
+		s_len--;
+	result = (char *)malloc(s_len);
+	if (!result)
+		return (NULL);
+	ft_strncat(result, s, s_len);
+	return (result);
 }

@@ -6,7 +6,7 @@
 #    By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 22:41:49 by arnaud            #+#    #+#              #
-#    Updated: 2023/10/10 22:47:52 by arnaud           ###   ########.fr        #
+#    Updated: 2023/10/18 17:43:55 by arnaud           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,10 @@ SRC_FILE =	ft_atoi.c \
 			ft_strstr.c \
 			ft_tolower.c \
 			ft_toupper.c \
-
+			ft_strsub.c \
+			ft_strjoin.c \
+			ft_strtrim.c
+			
 NAME = libft.a
 SRC = $(addprefix src/, $(SRC_FILE))
 OBJS = $(SRC:.c=.o)

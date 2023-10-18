@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 13:13:30 by arnaud            #+#    #+#             */
-/*   Updated: 2023/10/18 13:45:30 by arnaud           ###   ########.fr       */
+/*   Created: 2023/10/18 15:00:16 by arnaud            #+#    #+#             */
+/*   Updated: 2023/10/18 15:58:32 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *to_find, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	to_find_len;
-	size_t	i;
+	char	*result;
+	size_t	s1_len;
+	size_t	s2_len;
 
-	i = 0;
-	to_find_len = ft_strlen(to_find);
-	if (to_find_len == 0)
-		return ((char *)str);
-	if (len < to_find_len)
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+	if (!s1 || !s2)
 		return (NULL);
-	while (str[i] && i <= len - to_find_len)
-	{
-		if (ft_strncmp(str + i, to_find, to_find_len) == 0)
-			return ((char *)(str + i));
-		i++;
-	}
-	return (NULL);
+	result = (char *)malloc(s1_len + ft_strlen(s2) + 1);
+	if (!result)
+		return (NULL);
+	ft_strncpy(result, s1, s1_len + 1);
+	ft_strlcat(result, s2, s1_len + s2_len + 1);
+	return (result);
 }

@@ -7,6 +7,12 @@ Je tiens à souligner que je suis fermement opposé à toute forme de triche. Si
 
 N'hésitez pas à parcourir le code, à le tester et à me faire part de vos commentaires ou suggestions. Bonne exploration !
 
+## Astuce
+
+Récupère tous les protype des fichier c du répertoire courant
+```
+grep -hE '^[a-zA-Z_]+(\s+[a-zA-Z_]+)*(\s*\*?\s*)?ft_[a-zA-Z_]+\s*\(.*\)' *.c | sort
+```
 # Docs
 
 Au départ, il y a toutes les fonctions de la librairie standard de C :

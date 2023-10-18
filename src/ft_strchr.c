@@ -6,7 +6,7 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 13:08:08 by arnaud            #+#    #+#             */
-/*   Updated: 2023/09/11 13:10:47 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/10/17 22:21:38 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,7 @@ char	*ft_strchr(const char *str, int charac)
 			return ((char *)str);
 		str++;
 	}
+	if (*str == charac)
+		return ((char *)str);
 	return (NULL);
 }
