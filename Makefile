@@ -6,7 +6,7 @@
 #    By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 22:41:49 by arnaud            #+#    #+#              #
-#    Updated: 2023/10/20 16:54:05 by arnaud           ###   ########.fr        #
+#    Updated: 2023/10/22 16:55:14 by arnaud           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,9 @@ SRC_FILE =	ft_atoi.c \
 			ft_strsub.c \
 			ft_strjoin.c \
 			ft_strtrim.c \
-			ft_strsplit.c
+			ft_strsplit.c \
+			ft_putchar.c \
+			ft_putstr.c
 			
 NAME = libft.a
 SRC = $(addprefix src/, $(SRC_FILE))
