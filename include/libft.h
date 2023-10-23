@@ -6,7 +6,7 @@
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 22:41:28 by arnaud            #+#    #+#             */
-/*   Updated: 2023/10/22 16:56:43 by arnaud           ###   ########.fr       */
+/*   Updated: 2023/10/23 14:49:07 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,5 +60,11 @@ char	*ft_strtrim(const char *s);
 char	**ft_strsplit(const char *s, char c);
 void	ft_putchar(char c);
 void	ft_putstr(const char *str);
+char	*ft_itoa(int n);
+void	ft_putendl(char const *s);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char const *s, int fd);
+void	ft_putendl_fd(char const *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
