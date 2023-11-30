@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 15:27:16 by arnaud            #+#    #+#             */
-/*   Updated: 2023/10/22 20:24:45 by arnaud           ###   ########.fr       */
+/*   Created: 2023/10/29 14:38:43 by arnaud            #+#    #+#             */
+/*   Updated: 2023/10/29 14:42:03 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./include/libft.h"
-#include <stdio.h>
+#include "libft.h"
 
-void	main(void)
+int	ft_lstsize(t_list *lst)
 {
-	char	**buff;
-	int		i;
+	int	i;
 
-	printf("RESULT: |%d|\n", ft_atoi("465"));
-	buff = ft_strsplit(" ", ' ');
 	i = 0;
-	while (buff && buff[i])
+	while (lst)
 	{
-		printf("RESULT: |%s|", buff[i]);
 		i++;
+		lst = lst->next;
 	}
-	ft_putstr("coucou je suis un test\n");
-	ft_putchar('h');
-	printf("result: %s", ft_itoa(-8854));
+	return (i);
 }

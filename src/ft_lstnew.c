@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 15:27:16 by arnaud            #+#    #+#             */
-/*   Updated: 2023/10/22 20:24:45 by arnaud           ###   ########.fr       */
+/*   Created: 2023/10/29 14:08:29 by arnaud            #+#    #+#             */
+/*   Updated: 2023/10/29 14:45:51 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./include/libft.h"
-#include <stdio.h>
+#include "libft.h"
 
-void	main(void)
+t_list	*ft_lstnew(void *content)
 {
-	char	**buff;
-	int		i;
+	t_list	*new_elem;
 
-	printf("RESULT: |%d|\n", ft_atoi("465"));
-	buff = ft_strsplit(" ", ' ');
-	i = 0;
-	while (buff && buff[i])
-	{
-		printf("RESULT: |%s|", buff[i]);
-		i++;
-	}
-	ft_putstr("coucou je suis un test\n");
-	ft_putchar('h');
-	printf("result: %s", ft_itoa(-8854));
+	if (!content)
+		return (NULL);
+	new_elem = (t_list *)(malloc(sizeof(t_list)));
+	if (!new_elem)
+		return (NULL);
+	new_elem->content = content;
+	new_elem->next = NULL;
+	return (new_elem);
 }

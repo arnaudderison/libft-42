@@ -1,32 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arnaud <arnaud@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 15:27:16 by arnaud            #+#    #+#             */
-/*   Updated: 2023/10/22 20:24:45 by arnaud           ###   ########.fr       */
+/*   Created: 2023/10/29 14:43:04 by arnaud            #+#    #+#             */
+/*   Updated: 2023/10/29 14:44:50 by arnaud           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./include/libft.h"
-#include <stdio.h>
+#include "libft.h"
 
-void	main(void)
+t_list	ft_lstlast(t_list *lst)
 {
-	char	**buff;
-	int		i;
-
-	printf("RESULT: |%d|\n", ft_atoi("465"));
-	buff = ft_strsplit(" ", ' ');
-	i = 0;
-	while (buff && buff[i])
-	{
-		printf("RESULT: |%s|", buff[i]);
-		i++;
-	}
-	ft_putstr("coucou je suis un test\n");
-	ft_putchar('h');
-	printf("result: %s", ft_itoa(-8854));
+	if (!lst)
+		return (NULL);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }
